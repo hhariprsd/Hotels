@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VfH-zc-bW2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--List-->
+        <scene sceneID="lgz-te-kGL">
+            <objects>
+                <viewController id="7wH-AI-lmi" customClass="HotelsListVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xcd-JU-VbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="wf0-dl-UxR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zDl-wa-tZR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0gk-zb-wrE">
+                                <rect key="frame" x="0.0" y="60" width="600" height="491"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.29243665202714653" green="0.47532931501778231" blue="0.51451865467037039" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotelCellIdentifier" rowHeight="70" id="GNY-e3-acV" customClass="HotelTC">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GNY-e3-acV" id="LKG-Es-waZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="3go-LQ-Cem">
+                                                    <rect key="frame" x="8" y="5" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="JdL-GO-Z8V"/>
+                                                        <constraint firstAttribute="height" constant="60" id="nDq-sU-s6w"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-xl-gxn">
+                                                    <rect key="frame" x="80" y="10" width="505" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="iOG-bl-X1P"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                                    <color key="textColor" red="0.19824030306567075" green="0.19824030306567075" blue="0.19824030306567075" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-E8-bea" customClass="EDStarRating">
+                                                    <rect key="frame" x="80" y="39" width="92" height="20"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="92" id="EvE-UZ-zki"/>
+                                                        <constraint firstAttribute="height" constant="20" id="M5U-fX-80B"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-1P-hix">
+                                                    <rect key="frame" x="545" y="39" width="47" height="20"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="2Y9-9b-7FB"/>
+                                                        <constraint firstAttribute="width" constant="47" id="VRt-wd-kao"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3go-LQ-Cem" firstAttribute="top" secondItem="LKG-Es-waZ" secondAttribute="topMargin" constant="-3" id="1Zd-Cf-djc"/>
+                                                <constraint firstItem="uF4-E8-bea" firstAttribute="top" secondItem="XLI-xl-gxn" secondAttribute="bottom" constant="8" id="79B-xD-s5C"/>
+                                                <constraint firstItem="uF4-E8-bea" firstAttribute="leading" secondItem="3go-LQ-Cem" secondAttribute="trailing" constant="12" id="ATl-YA-jBK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7Os-1P-hix" secondAttribute="trailing" id="Bzc-YC-0YL"/>
+                                                <constraint firstItem="7Os-1P-hix" firstAttribute="top" secondItem="XLI-xl-gxn" secondAttribute="bottom" constant="8" id="F5o-b0-15G"/>
+                                                <constraint firstItem="XLI-xl-gxn" firstAttribute="trailing" secondItem="LKG-Es-waZ" secondAttribute="trailingMargin" constant="-7" id="U7b-ee-Baz"/>
+                                                <constraint firstItem="XLI-xl-gxn" firstAttribute="top" secondItem="LKG-Es-waZ" secondAttribute="topMargin" constant="2" id="bKZ-Tg-ixV"/>
+                                                <constraint firstItem="3go-LQ-Cem" firstAttribute="leading" secondItem="LKG-Es-waZ" secondAttribute="leadingMargin" id="nK0-Ew-D2t"/>
+                                                <constraint firstItem="XLI-xl-gxn" firstAttribute="leading" secondItem="3go-LQ-Cem" secondAttribute="trailing" constant="12" id="ufG-c5-5rm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.62101393071532396" green="0.84918257237726147" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="distance" destination="7Os-1P-hix" id="Tny-Kc-b2n"/>
+                                            <outlet property="image" destination="3go-LQ-Cem" id="ogV-wO-U8W"/>
+                                            <outlet property="name" destination="XLI-xl-gxn" id="zeh-F1-kDb"/>
+                                            <outlet property="ratingView" destination="uF4-E8-bea" id="lNR-x2-I5F"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7wH-AI-lmi" id="Hb5-eS-WBm"/>
+                                    <outlet property="delegate" destination="7wH-AI-lmi" id="8sn-oj-NuX"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3R-Nb-iDP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Qzu-oy-LLU"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Hotels" id="VG3-8h-xTl">
+                                        <barButtonItem key="rightBarButtonItem" title="Sort" id="c1f-yG-R1D">
+                                            <color key="tintColor" red="0.19824030309999999" green="0.19824030309999999" blue="0.19824030309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="sortHotels:" destination="7wH-AI-lmi" id="VVX-rB-anL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V3R-Nb-iDP" firstAttribute="leading" secondItem="zDl-wa-tZR" secondAttribute="leadingMargin" constant="-16" id="3d2-Ox-fT0"/>
+                            <constraint firstItem="V3R-Nb-iDP" firstAttribute="top" secondItem="zDl-wa-tZR" secondAttribute="topMargin" id="Ego-tp-zhp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0gk-zb-wrE" secondAttribute="trailing" constant="-16" id="NdG-g6-TnL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V3R-Nb-iDP" secondAttribute="trailing" constant="-16" id="Pu4-89-P32"/>
+                            <constraint firstItem="wf0-dl-UxR" firstAttribute="top" secondItem="0gk-zb-wrE" secondAttribute="bottom" id="epG-Z4-nKk"/>
+                            <constraint firstItem="0gk-zb-wrE" firstAttribute="top" secondItem="V3R-Nb-iDP" secondAttribute="bottom" id="q25-93-drx"/>
+                            <constraint firstItem="0gk-zb-wrE" firstAttribute="leading" secondItem="zDl-wa-tZR" secondAttribute="leadingMargin" constant="-16" id="spg-Dn-qiy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="List" image="List" id="abq-Q5-kM7"/>
+                    <connections>
+                        <outlet property="tableView" destination="0gk-zb-wrE" id="fMk-Ok-BKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvY-PK-vqN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="ZZl-xa-cQN">
+            <objects>
+                <viewController id="GmJ-Nh-3Up" customClass="HotelsMapVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zuL-VA-DJy"/>
+                        <viewControllerLayoutGuide type="bottom" id="hBc-ye-rCn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4B5-bO-a9C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57N-yO-xf9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ORq-dh-ZVS"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Hotels" id="YZA-y5-zyp"/>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lab-bE-QVz">
+                                <rect key="frame" x="0.0" y="60" width="600" height="492"/>
+                                <connections>
+                                    <outlet property="delegate" destination="GmJ-Nh-3Up" id="rFq-VQ-DkV"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lab-bE-QVz" firstAttribute="top" secondItem="57N-yO-xf9" secondAttribute="bottom" id="6vj-eg-zcp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lab-bE-QVz" secondAttribute="trailing" constant="-16" id="LUj-qj-sou"/>
+                            <constraint firstItem="57N-yO-xf9" firstAttribute="leading" secondItem="4B5-bO-a9C" secondAttribute="leadingMargin" constant="-16" id="Nxu-27-PGN"/>
+                            <constraint firstItem="lab-bE-QVz" firstAttribute="leading" secondItem="4B5-bO-a9C" secondAttribute="leadingMargin" constant="-16" id="OM5-Dd-PrS"/>
+                            <constraint firstItem="57N-yO-xf9" firstAttribute="top" secondItem="4B5-bO-a9C" secondAttribute="topMargin" id="Z9T-8E-mcd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57N-yO-xf9" secondAttribute="trailing" constant="-16" id="nTh-Ba-f8c"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lab-bE-QVz" secondAttribute="bottom" constant="48" id="ssm-PU-Bpa"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Map" image="Map" id="kbn-T7-140"/>
+                    <connections>
+                        <outlet property="mapView" destination="lab-bE-QVz" id="Ddh-oe-TDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLs-fN-hLn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="axk-uj-UV2">
+            <objects>
+                <tabBarController id="VfH-zc-bW2" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Brg-za-HIO">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabBar" destination="Brg-za-HIO" id="mth-Eg-lcv"/>
+                        <segue destination="7wH-AI-lmi" kind="relationship" relationship="viewControllers" id="RNg-a8-Xqr"/>
+                        <segue destination="GmJ-Nh-3Up" kind="relationship" relationship="viewControllers" id="HDp-mj-6Oa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYv-FS-Cfi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="List" width="24" height="12"/>
+        <image name="Map" width="19" height="24"/>
+        <image name="splash" width="29" height="29"/>
+    </resources>
+</document>
