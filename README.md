@@ -5,7 +5,7 @@ This project uses Cocoaopods to manage its third party dependencies. In order to
 
 http://www.cocoapods.org
 
-Current Support Cocoapods Version = 0.35.0 (Current stable release as of 1/21/2015)
+Current Support Cocoapods Version = 0.36.0 (Current stable release as of 1/21/2015)
 
 To check your current version of Cocoapods run:
 
@@ -18,4 +18,4 @@ To install the current stable release of Cocoapods run:
 sudo gem install cocoapods
 To install a specific version of Cocoapods run:
 
-sudo gem install cocoapods -v 0.35.0
+sudo gem install cocoapods -v 0.36.0
